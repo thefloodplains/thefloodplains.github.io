@@ -1,0 +1,99 @@
+@-ms-viewport{
+  width: device-width;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: 'averta_stdbold';
+    src: url('fonts/avertastd-bold-webfont.woff2') format('woff2'),
+         url('fonts/avertastd-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'averta_stdextrabold';
+    src: url('fonts/avertastd-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/avertastd-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Menu Bar */
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'averta_stdbold', 'Lato', 'Cantarell', corbel, 'Roboto', 'PT Sans', 'Open Sans', sans-serif;
+    font-weight: 700;
+    overflow: hidden;
+    /* background-color: rgb(0, 0, 0, 0.25); */
+    background-color: white;
+    border-bottom: 4px solid #327F39;
+    /* opacity: 0.7; */
+    /* background: rgba(0, 0, 0, 0.85); */
+}
+
+ul.topnav li {
+    float: right
+}
+
+ul.topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 27px 38px;
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: 700;
+}
+
+/* ul.topnav li a:hover:not(.active) {
+    background-color: #F4F1EA;
+} */
+
+/* ul.topnav li a.active {
+    background-color: #F4F1EA;
+} */
+
+ul.topnav li.left {
+    float: left;
+}
+
+ul.topnav li.center {
+    display: inline-block;
+}
+
+li:hover a {
+    color: #327F39 !important;
+}
+
+/* Body */
+
+body {
+        margin: 0;
+        z-index: 1;
+        width: 100%;
+        max-width: 100%;
+        -moz-background-size: 100% 100%;
+        background: url(bg.png);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        transform-origin: top;
+    }     
+        
+h1 {
+    font-size: 5em;
+    text-align: center;
+    font-family: 'averta_stdbold';
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+    color: #327F39;
+    font-family: 'averta_stdbold';
+}
