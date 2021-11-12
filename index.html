@@ -35,13 +35,14 @@
         text-align: center;
         color: black;
         font-family: 'averta_stdbold';
+        line-height: 50px;
     }  
 
     img {
         width: 75px;   
     }
 
-    div {
+    div.two {
         position: absolute;
         top:0;
         bottom: 0;
@@ -57,8 +58,10 @@
     }
 
     .middle {
+    	position:absolute;
     	width:75px;
-    	margin:0 auto;
+    	margin-left:50%; 
+    	margin-right:50%;
     }
 
     ul.topnav li.left {
@@ -82,7 +85,31 @@
     body {
         background: url(lightshark.jpg);
     }
-        
+
+	.container {
+	  display: flex;
+	  padding-top:55em;
+	  width:1000px;
+	}
+
+	.item {
+	  background: #F97B62;
+	  flex-basis: 750px;
+	  height: 400px;
+	  margin: 5px;
+	  border: 2px solid black;
+	  opacity:0.5;
+	}
+
+	div.three {
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 1500px;
+    }
+
 /* @media (min-width: 600px) {
     .desktop-only {
         display:block !important;
@@ -99,21 +126,26 @@
   <li><a href="_">ART</a></li>
   <li><a href="logos">EPK</a></li>
   <li><a href="work">MUSIC</a></li>
-  <li><div class="middle"><img src="logo.png" style="padding-top:7px"></div></li>
+  <li class="yes"><div class="middle"><img src="logo.png" style="padding-top:7px"></div></li>
   <li class="left"><a href="https://twitter.com/theFloodShark"><img class="social" src="twitter.svg"></a></li>
-  <li class="left"><a href="http://www.benderdesignco.com/"><img class="social" src="ig_black.svg"></a></li>
-  <li class="left"><a href="https://www.instagram.com/thefloodshark"><img class="social" src="facebook_black.svg"></a></li>
+  <li class="left"><a href="https://www.instagram.com/thefloodshark"><img class="social" src="ig_black.svg"></a></li>
+  <li class="left"><a href="https://www.facebook.com/thefloodshark"><img class="social" src="facebook_black.svg"></a></li>
   <li class="left"><a href="https://www.youtube.com/channel/UCrcvj6Q-V4S-xad_Y_gPTFw"><img class="social" src="youtube.svg"></a></li>
   <li class="left"><a href="https://open.spotify.com/artist/2zFwAdyVk6Qt1pfDGyEjOW"><img class="social" src="spotify.svg"></a></li>
 </ul>
 
-<div class="pad">
+<div class="two pad">
 	<center><h1>~ THE FLOODSHARK ~</h1></center>
 	<center><h2>An enigmatic producer/composer turned snarky digital shark surfing the sonic waves</h2></center>
 </div>
 
-<!-- <div class="row">
-  <img src="Legion-helmet-HOMEPAGE.jpg">
-  <img src="LGM-truck-wrap-HOMEPAGE.jpg">
-  <img src="Gator-mascot-HOMEPAGE.jpg">
-</div> -->
+<center>
+	<div class="three container">
+    <div class="item">
+    	<h2>About</h2>
+    </div>
+    <div class="item">
+    	<h2>Music</h2>
+    </div>
+  </div>
+</center>

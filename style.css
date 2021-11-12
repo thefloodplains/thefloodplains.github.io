@@ -37,7 +37,11 @@ ul.topnav {
 }
 
 ul.topnav li {
-    float: right
+    float: right;
+}
+
+ul.topnav li.yes {
+    float: none;
 }
 
 ul.topnav li a {
