@@ -14,7 +14,7 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">    
 <link rel="shortcut icon" href="WaterDrop.ico" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<link rel='stylesheet' type='text/css' href='main3.css'>
+<link rel="stylesheet" type="text/css" href="style.css">
 <style>
 body {
     margin: 0;
@@ -28,12 +28,7 @@ body {
     background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     background: url(oceanwatertwo.png);
-    background-attachment: fixed;
         }     
-ul, li {
-    color: black;
-    font-family: 'Buenard', Garamond, 'EB Garamond';
-}
 h {
     text-align: center;
     color: #FFE097; /* #0081A5 */
@@ -48,12 +43,6 @@ h.mont
     font-family: "Montserrat";
     border-bottom: 2px dashed black;
     }
-ul {
-    width: 80%;
-    margin: auto;
-    padding-top: 14px;
-    padding-bottom: 6px;
-}
 p {
     width: 80%;
     margin: auto;
@@ -71,14 +60,11 @@ p.two {
   text-align: center;
   align-content: center;
 }
+
 img {
-    max-height: 230px;
-    max-width: 230px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    }    
+    width: 75px;   
+}
+
 .column {
     float: left;
     width: 36%;
@@ -121,12 +107,6 @@ hr {
     display: table;
     margin: 0 auto;
 }
-a.none {text-decoration: none;
-        border-bottom: none;}
-    
-a:hover {
-    border-bottom: solid #F97B62 1px;
-    }
     
 .fullwidth {
     max-width: 960px;
@@ -187,96 +167,25 @@ a:hover {
     /* outline: 1px solid #0081A5; */
 }     
     
-ul.two
-    {
-    width: 100%;
-}
+ul.topnav li.left {
+  float: left;
+  }
 
-ul.topnav {
-    list-style-type: none;
-    list-style:none;
-    text-align:center;
-    /* margin: 0; */
-    padding-bottom: 12px;
-    font-family: 'Montserrat','Buenard', Garamond, 'EB Garamond', Georgia, serif;
-    /* font-weight: 700; */
-    overflow: hidden;
-    /* opacity: 0.7;
-    background: rgba(0, 0, 0, 0.85); */
-    background-color: black;
-    padding: 9px 0 9px 0;
-}
-ul.topnav li {display: inline;}
+li:hover a {
+  color: #F97B62 !important;
+  }
 
-ul.topnav li a {
-    display: inline-block;
-    color: #F97B62;
-    text-align: center;
-    margin: 0px 0px;
-    padding: 15px 15px;
-    text-decoration: none;
-    /* font-weight: 700; */
-}
-    
-a {
-        color: #FFE097;
-    }    
-
-.topnav-centered a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-ul.topnav li a:hover:not(.active) {background-color: #0081A5;}
-
-ul.topnav li a.active {background-color: #0081A5;}
-
-ul.topnav li.left {float: left;}
-
-@media screen and (max-width: 600px){
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
-    ul.topnav li.left {float: none;}
-}
-    
 @media screen and (max-width: 600px) {
     .seem {
     max-width: 90%;
     }
-}
-
-@media screen and (max-width: 600px) {
-    li {
-    font-size: 12px;
-    }
-}    
-    
-@media screen and (max-width: 600px) {    
-ul.topnav li a {
-    display: inline-block;
-    color: #F97B62;
-    text-align: center;
-    margin: 0px 0px;
-    padding: 8px 8px;
-    text-decoration: none;
-    /* font-weight: 700; */
-    }    
 }
     
 @media screen and (max-width: 600px) {    
 h {
   font-size: 21px;
     }    
-}    
-
-@media screen and (max-width: 600px) {    
-a {
-  font-size: 12px;
-}    
-    }    
+}     
 
 @media screen and (max-width: 600px) {
     img {
@@ -303,23 +212,12 @@ a {
     .column {
      padding: 3px; 
     }
-}
-    
-@media screen and (max-width: 600px) {    
-ul {
-    width: 80%;
-    margin: auto;
-    padding-top: 14px;
-    padding-bottom: 6px;
-    padding-left: 0px;
-}
-}       
+}    
     
 </style>
 </head>
 <body>
 
-<div class="pad">
 <ul class="topnav">
   <li><a href="contact">CONTACT</a></li>
   <li><a href="art">ART</a></li>
@@ -332,8 +230,6 @@ ul {
   <li class="left"><a href="https://www.youtube.com/channel/UCrcvj6Q-V4S-xad_Y_gPTFw"><img class="social" src="youtube.svg"></a></li>
   <li class="left"><a href="https://open.spotify.com/artist/2zFwAdyVk6Qt1pfDGyEjOW"><img class="social" src="spotify.svg"></a></li>
 </ul>
-
-<div class="fullwidth">    
     
     <hr>
     
