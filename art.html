@@ -15,13 +15,6 @@ h1 {
     color: #224356;
     margin: 27px 0 33px;
 }
-    
-/* img {
-        max-height: 300px;
-        max-width: 300px;
-        width: 100%;
-        height: 100%;
-    } */
 
 h2 {
     color: #F97B62;
@@ -29,12 +22,32 @@ h2 {
     padding-bottom: 3px;
     text-align: center;
 }
+
 h4 {
     font-size: 22px;
     margin-top: 1px;
     color: #0081A5;
     text-align: center;
-}  
+}
+
+ul.topnav li.left {
+    float: left;
+}
+
+li:hover a {
+    color: #F97B62 !important;
+}
+
+img.two {
+    width: 75px;
+    }
+
+.middle {
+      position:absolute;
+      width:75px;
+      margin-left:50%; 
+      margin-right:50%;
+    }   
     
 img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -79,70 +92,14 @@ div.pad {
     
 a.none {
         text-decoration: none;
-        border-bottom: none;}      
-
-ul {
-  margin-left: 0px;
-}
+        border-bottom: none;
+    }
     
 .fullwidth {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
     }     
-    
-ul.topnav {
-    list-style-type: none;
-    list-style:none;
-    text-align:center;
-    /* margin: 0; */
-    padding-bottom: 12px;
-    padding-top: 12px;
-    font-family: 'Buenard', Garamond, 'EB Garamond', Georgia, serif;
-    /* font-weight: 700; */
-    overflow: hidden;
-    /* opacity: 0.7;
-    background: rgba(0, 0, 0, 0.85); */
-    /* background-color: #224356; */
-    background-color: black;
-    padding: 9px 0 9px 0;
-}
-    
-ul.topnav li {display: inline;}
-
-ul.topnav li a {
-    display: inline-block;
-    color: #F97B62;
-    text-align: center;
-    margin: 0px 0px;
-    padding: 15px 15px;
-    text-decoration: none;
-    /* font-weight: 700; */
-}
-
-.topnav-centered a {
-  float: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-ul.topnav li a:hover:not(.active) {background-color: #0081A5;}
-
-ul.topnav li a.active {background-color: #0081A5;}
-
-ul.topnav li.left {float: left;}
-
-/* @media screen and (max-width: 600px){
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
-    ul.topnav li.left {float: none;}
-} */
-    
-a:hover {
-  border-bottom: solid #F97B62 1px;
-}
 
 @media only screen and (max-width: 600px) {
 h2 {
@@ -171,7 +128,7 @@ h1 {
     font-family: 'Montserrat', 'Buenard', Garamond, 'EB Garamond', Georgia;
     color: #0081A5;
     margin: 12px 0 0;
-}
+  }
 }     
 
 @media only screen and (max-width: 600px) {
@@ -180,17 +137,17 @@ h1 {
     font-family: 'Montserrat', 'Buenard', Garamond, 'EB Garamond', Georgia;
     color: #0081A5;
     margin: 12px 0 0;
-}
+  }
 }
     
 @media only screen and (max-width: 600px) {
 .column div h4 {
     place-self: auto;
-}
+  }
 } 
     
 @media (max-width: 800px) {
-  .row{
+  .row {
     grid-template-columns: 1fr 1fr;
     grid-gap: 2%;
     align-items: start;
@@ -238,24 +195,6 @@ h1 {
   margin: 10px;
   }
 }
-
-@media only screen and (max-width: 600px) {
-    li {
-        font-size: 12px;
-}
-}
-
-@media screen and (max-width: 600px) {    
-ul.topnav li a {
-    display: inline-block;
-    color: #F97B62;
-    text-align: center;
-    margin: 0px 0px;
-    padding: 8px 8px;
-    text-decoration: none;
-    /* font-weight: 700; */
-    }    
-}
    
 </style>
 </head>
@@ -266,7 +205,7 @@ ul.topnav li a {
   <li><a href="art">ART</a></li>
   <li><a href="epk">EPK</a></li>
   <li><a href="music">MUSIC</a></li>
-  <li class="yes"><div class="middle"><img src="logo.png" style="padding-top:7px"></div></li>
+  <li class="yes"><div class="middle"><img class="two" src="logo.png" style="padding-top:7px"></div></li>
   <li class="left"><a href="https://twitter.com/theFloodShark"><img class="social" src="twitter.svg"></a></li>
   <li class="left"><a href="https://www.instagram.com/thefloodshark"><img class="social" src="ig_black.svg"></a></li>
   <li class="left"><a href="https://www.facebook.com/thefloodshark"><img class="social" src="facebook_black.svg"></a></li>
