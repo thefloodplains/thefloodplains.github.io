@@ -77,16 +77,16 @@ li:hover a {
 /* Body */
 
 body {
-        margin: 0;
-        z-index: 1;
-        width: 100%;
-        max-width: 100%;
-        -moz-background-size: 100% 100%;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        transform-origin: top;
-    }     
+    margin: 0;
+    z-index: 1;
+    width: 100%;
+    max-width: 100%;
+    -moz-background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform-origin: top;
+    }
         
 h1 {
     font-size: 5em;
@@ -104,7 +104,7 @@ h2 {
 }
 
 p {
-    font-size: 3em;
+    font-size: 1.8em;
     font-family: 'averta_stdbold';
     color: #F97B62;
     padding: 24px;
