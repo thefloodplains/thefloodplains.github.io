@@ -103,6 +103,13 @@ h2 {
     line-height: 50px;
 }
 
+p {
+    font-size: 3em;
+    font-family: 'averta_stdbold';
+    color: #F97B62;
+    padding: 24px;
+}
+
 .middle {
     position:absolute;
     width:75px;
