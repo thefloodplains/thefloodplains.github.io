@@ -107,7 +107,9 @@ p {
     font-size: 1.8em;
     font-family: 'averta_stdbold';
     color: black;
-    padding: 24px;
+    padding: 5px;
+    padding-left: 33px;
+    padding-right: 33px;
 }
 
 .middle {
