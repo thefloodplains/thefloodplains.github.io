@@ -185,7 +185,8 @@ h1 {
   }
 
 .grid img {
-  border: 3px solid white;
+  /* border: 3px solid white; */
+  border: none;
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   max-width: 100%;
 }
@@ -193,6 +194,10 @@ h1 {
 img.social {
       width: 34px !important;
     }
+
+a.nopad {
+    padding: 0 !important;
+}
 
 @media (max-width: 800px) {
 .grid { 
@@ -213,7 +218,7 @@ img.social {
   <li><a href="art">ART</a></li>
   <li><a href="epk">EPK</a></li>
   <li><a href="music">MUSIC</a></li>
-  <li class="yes"><div class="middle"><img class="two" src="logo.png" style="padding-top:7px"></div></li>
+  <li class="yes"><div class="middle"><a class="nopad" href="https://thefloodshark.com"><img class="two" src="logo.png" style="padding-top:7px"></a></div></li>
   <li class="left"><a href="https://twitter.com/theFloodShark"><img class="social" src="twitter.svg"></a></li>
   <li class="left"><a href="https://www.instagram.com/thefloodshark/"><img class="social" src="ig_black.svg"></a></li>
   <li class="left"><a href="https://www.facebook.com/thefloodshark"><img class="social" src="facebook_black.svg"></a></li>
