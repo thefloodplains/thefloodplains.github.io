@@ -15,6 +15,7 @@
 <meta content="width=device-width, initial-scale=1" name="viewport" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="style3.css">
 <style>
     
@@ -26,9 +27,8 @@ body {
     max-width: 100%;
     /* background-repeat: repeat-x; */
     background: white;
-    font-family: Garamond;
     -moz-background-size: 100% 100%;
-    background-color: black;
+    background-color: #53008D;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -46,6 +46,11 @@ a {
 * {
     box-sizing: border-box;
 }
+
+ul.topnav li a {
+	display: inline !important;
+}
+
 .row {
     display: flex;
 }
@@ -56,10 +61,9 @@ a {
     padding: 15px;
 } /* height: 300px;  Should be removed. Only for demonstration */
 ul, li {
-    font-family: Georgia, garamond, arial, serif;
     color: #f4ece1;
 }
-li {
+li.norm {
     margin-bottom: 8.1px;
     /* padding-bottom: 12px; */
     font-size: 21px;
@@ -145,7 +149,6 @@ p.reduce {
 .small {
 	font-size: 24px;
     font-weight: 300;
-    font-family: 'EB Garamond', Garamond, 'Buenard';
     color: black;
     text-decoration-color: black;
 }
@@ -222,14 +225,12 @@ ul.topnav {
     padding-top: 12px;
     padding-left:0;
     padding-right:0;
-    font-family: 'Buenard', Garamond, 'EB Garamond', Georgia, serif;
     /* font-weight: 700; */
     overflow: hidden;
     /* opacity: 0.7;
     background: rgba(0, 0, 0, 0.85); */
     /* background-color: #224356; */
-    background-color: black;
-    margin-left:-4px;
+    background-color: #FF16B5;
 }
     
 div.frame
@@ -245,15 +246,6 @@ ul.topnav li {
   display: inline;
 }
 
-ul.topnav li a {
-    /* display: inline-block; */
-    color: white;
-    text-align: center;
-    padding: 9px 22px;
-    text-decoration: none;
-    /* font-weight: 700; */
-}
-
 .topnav-centered a {
   float: none;
   position: absolute;
@@ -266,7 +258,10 @@ ul.topnav li a:hover:not(.active) {background-color: #55e3ff;}
 
 ul.topnav li a.active {background-color: #55e3ff;}
 
-ul.topnav li.left {float: left;}
+ul.topnav li.left {
+	float: left !important;
+	text-indent: 0em !important;
+}
 
 @media screen and (max-width: 600px){
     ul.topnav li.right, 
@@ -492,6 +487,10 @@ img.two {
     width:80px;
     }
 
+img.social {
+      width: 34px !important;
+    }
+
 </style>
 </head>
 <body>
@@ -500,10 +499,10 @@ img.two {
   <li><a href="contact">CONTACT</a></li>
   <li><a href="art">ART</a></li>
   <li><a href="epk">EPK</a></li>
-  <li><a href="work">MUSIC</a></li>
-  <li class="yes"><div class="middle"><a class="nopad" href="https://thefloodshark.com"><img class="two" src="logo.png" style="padding-top:7px"></div></li>
+  <li><a href="music">MUSIC</a></li>
+  <li class="yes"><div class="middle"><a class="nopad" href="https://thefloodshark.com"><img class="two" src="logo.png" style="padding-top:7px"></a></div></li>
   <li class="left"><a href="https://twitter.com/theFloodShark"><img class="social" src="twitter.svg"></a></li>
-  <li class="left"><a href="https://www.instagram.com/thefloodshark"><img class="social" src="ig_black.svg"></a></li>
+  <li class="left"><a href="https://www.instagram.com/thefloodshark/"><img class="social" src="ig_black.svg"></a></li>
   <li class="left"><a href="https://www.facebook.com/thefloodshark"><img class="social" src="facebook_black.svg"></a></li>
   <li class="left"><a href="https://www.youtube.com/channel/UCrcvj6Q-V4S-xad_Y_gPTFw"><img class="social" src="youtube.svg"></a></li>
   <li class="left"><a href="https://open.spotify.com/artist/2zFwAdyVk6Qt1pfDGyEjOW"><img class="social" src="spotify.svg"></a></li>
@@ -560,15 +559,15 @@ img.two {
   <div class="column">
     <h2 class="margin">News</h2>
           <hr>
-          <li><a href="http://www.onthecomeuptv.com/floodsharkletloosethefloodgates/"><b>OnTheComeUp</b></a> - <i>Let Loose the Floodgates</i> <a href="http://www.onthecomeuptv.com/floodsharkletloosethefloodgates/">album review</a></li>
+          <li class="norm"><a href="http://www.onthecomeuptv.com/floodsharkletloosethefloodgates/"><b>OnTheComeUp</b></a> - <i>Let Loose the Floodgates</i> <a href="http://www.onthecomeuptv.com/floodsharkletloosethefloodgates/">album review</a></li>
       
-          <li><b><a href="https://themusicsite.com/music-news/reviews/artist-review-floodshark-follow-thefloodshark">The Music Site</a></b> - <i>Let Loose the Floodgates</i> & <i>Synthetic Shark</i> <a href="https://themusicsite.com/music-news/reviews/artist-review-floodshark-follow-thefloodshark">review</a></li>
+          <li class="norm"><b><a href="https://themusicsite.com/music-news/reviews/artist-review-floodshark-follow-thefloodshark">The Music Site</a></b> - <i>Let Loose the Floodgates</i> & <i>Synthetic Shark</i> <a href="https://themusicsite.com/music-news/reviews/artist-review-floodshark-follow-thefloodshark">review</a></li>
             
-          <li><b>09/19/2018 - <a href="https://www.jaamzin.com/">JaamZIN Creative</a></b> - <i>Another William Blake</i> <a href="https://www.jaamzin.com/blog/the-floodshark">added to catalogue</a></li>
+          <li class="norm"><b>09/19/2018 - <a href="https://www.jaamzin.com/">JaamZIN Creative</a></b> - <i>Another William Blake</i> <a href="https://www.jaamzin.com/blog/the-floodshark">added to catalogue</a></li>
           
-          <li><b>September 2018</b> - Another William Blake included in <b><a href="https://www.jaamzin.com/jaamzin-creative-magazine">JaamZIN Creative</a></b> print magazine</li>
+          <li class="norm"><b>September 2018</b> - Another William Blake included in <b><a href="https://www.jaamzin.com/jaamzin-creative-magazine">JaamZIN Creative</a></b> print magazine</li>
 
-          <li><b>November 2020</b> - <b><a href="https://patricksmusicblog.tumblr.com/post/633516144017424384/the-floodshark-sick-sharkalbum-review">Sick Shark album review</a></b> by writer and music enthusiast <b><a href="https://patricksmusicblog.tumblr.com/">Patrick Griffin</a></b></li>
+          <li class="norm"><b>November 2020</b> - <b><a href="https://patricksmusicblog.tumblr.com/post/633516144017424384/the-floodshark-sick-sharkalbum-review">Sick Shark album review</a></b> by writer and music enthusiast <b><a href="https://patricksmusicblog.tumblr.com/">Patrick Griffin</a></b></li>
       
    <h2><a href="https://www.thefloodplains.com/Gallery.html">Images & Art</a></h2>
           <hr>
