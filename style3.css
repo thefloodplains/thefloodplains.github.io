@@ -2,6 +2,24 @@
   width: device-width;
 }
 
+/* Fonts */
+
+@font-face {
+    font-family: 'averta_stdbold';
+    src: url('fonts/avertastd-bold-webfont.woff2') format('woff2'),
+         url('fonts/avertastd-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'averta_stdextrabold';
+    src: url('fonts/avertastd-extrabold-webfont.woff2') format('woff2'),
+         url('fonts/avertastd-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @import 'https://fonts.googleapis.com/css?family=Buenard|EB+Garamond|Lora|Roboto';
 
 h, h1, h2, h3, h4, h5, h6 {
@@ -20,10 +38,12 @@ h1 {
   color: black;
   font-size: 30px;
   padding-bottom: 4px;
+  font-family: 'averta_stdbold';
 }
 h2 {
   color: black;
-  font-size: 28px;  
+  font-size: 28px;
+  font-family: 'averta_stdbold'; 
 }
 h3 {
 	font-size: 24px;
@@ -46,6 +66,11 @@ p, p1, p2, ol, li, dl, address {
   word-wrap: break-word;
   font-size: 24px; /* was originally 13 px */
   text-align: left;
+  font-family: 'averta_stdbold';
+}
+
+li {
+  font-family: 'averta_stdbold';
 }
 
 ol {
