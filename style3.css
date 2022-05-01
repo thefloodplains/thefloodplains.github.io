@@ -104,7 +104,7 @@ blockquote cite {
   font-style: normal;
 	text-transform: uppercase;
 }
-a {
+a.dash {
   color: #0081A5;
   border-bottom: dashed 1px; text-decoration: none;  
 }
