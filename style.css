@@ -70,10 +70,6 @@ ul.topnav li.center {
     display: inline-block;
 }
 
-li:hover a {
-    color: #327F39 !important;
-}
-
 /* Body */
 
 body {
