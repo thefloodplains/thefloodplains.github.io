@@ -264,14 +264,18 @@
 	  }
 	}
 
-    .grayscale {
-      filter: gray; /* IE6-9 */
-      -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    /* .grayscale {
+      filter: gray;
+      -webkit-filter: grayscale(100%);
     }
 
     .grayscale:hover {
       filter: none;
       -webkit-filter: grayscale(0%);
+    } */
+
+    ul.topnav li a:hover:not(.active) {
+    background-color: magenta;
     }
 
 /* @media (min-width: 600px) {
