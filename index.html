@@ -36,6 +36,7 @@
 
 	body {
         background: url(lightshark.jpg);
+        overflow-x: hidden;
     }
         
     h1 {
@@ -282,7 +283,34 @@
         display:block !important;
     }
 }    */
-      
+      /* line */
+
+      .wavy-line2 {
+        top: 86.5%;
+        width: 97%;
+        position: absolute;
+        left: 55%; /* Center the element horizontally */
+        transform: translateX(-50%); /* Center the element horizontally */
+        display: block;
+      }
+
+      @keyframes oscillate {
+        0% {
+          transform: translateX(-50%) translateX(0);
+        }
+        50% {
+          transform: translateX(-50%) translateX(10px); /* Adjust the oscillation amplitude */
+        }
+        100% {
+          transform: translateX(-50%) translateX(0);
+        }
+      }
+
+      .wavy-line2 {
+        animation: oscillate 2s infinite linear; /* Adjust animation duration as needed */
+      }
+
+
     </style>
 </head>
 	
@@ -300,6 +328,12 @@
   <li class="grayscale left"><a href="https://www.youtube.com/channel/UCrcvj6Q-V4S-xad_Y_gPTFw"><img class="grayscale social" src="youtube.svg"></a></li>
   <li class="grayscale left"><a href="https://open.spotify.com/artist/2zFwAdyVk6Qt1pfDGyEjOW"><img class="grayscale social" src="spotify.svg"></a></li>
 </ul>
+
+<div class="wavy-line2">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10">
+        <path d="M0,5 C10,1 20,9 30,5 C40,1 50,9 60,5 C70,1 80,9 90,5" />
+    </svg>
+</div>
 
 <div class="two pad">
 	<center><h1>~ THE FLOODSHARK ~</h1></center>
@@ -331,6 +365,11 @@
           </div>    
         </div>
 
+        <div class="wavy-line">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10">
+                <path d="M0,5 C10,1 20,9 30,5 C40,1 50,9 60,5 C70,1 80,9 90,5" />
+            </svg>
+        </div>
             
         <div style="display:flex;justify-content:center;align-items:center;" class="row seem"> 
           <div class="column">
