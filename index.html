@@ -79,6 +79,7 @@
         margin: auto;
         width: 750px;
         height: 400px;
+        max-width: 330px !important;
     }
 
     .pad {
@@ -282,6 +283,9 @@
 	  ul.topnav {
 	    padding-bottom: 0px;
 	    margin-bottom: -10px;
+        display: flex;
+        justify-content: center; /* Horizontally center the items */
+        list-style-type: none;
 	    /* display: flex; */
 	  }
 	}
@@ -342,6 +346,12 @@
     @media only screen and (min-width: 750px) {
     .mobile1, .mobile2 {
         display:none;
+        }
+    }
+
+    @media only screen and (max-width: 750px) {
+    body > ul.desktop.topnav {
+        display:none !important;
         }
     }
 
