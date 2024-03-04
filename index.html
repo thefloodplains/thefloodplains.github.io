@@ -120,6 +120,14 @@
       opacity: 0.5;
     }
 
+    @media only screen and (max-width: 751px) {
+    .wavy-line2 {
+        overflow-x: hidden;
+        width: 80% !important;
+        }
+    }
+    
+
 	.item {
 	  /* background: #F97B62; */
 	  flex-basis: 750px;
@@ -383,19 +391,6 @@
       .wavy-line2 {
         animation: oscillate 2s infinite linear; /* Adjust animation duration as needed */
       }
-
-    @media only screen and (max-width: 751px) {
-      div.two {
-          position: absolute;
-          top:0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          margin: auto;
-          max-width: inherit !important;
-          height: 400px;
-        }
-    }
 
     </style>
 </head>
