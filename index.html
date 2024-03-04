@@ -39,9 +39,9 @@
         overflow-x: hidden;
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 700px) {
     html, body {
-        max-width: 100% !important;
+        max-width: 100%;
         overflow-x: hidden;
        }
     }
@@ -384,6 +384,18 @@
         animation: oscillate 2s infinite linear; /* Adjust animation duration as needed */
       }
 
+    @media only screen and (max-width: 751px) {
+      div.two {
+          position: absolute;
+          top:0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          max-width: inherit !important;
+          height: 400px;
+        }
+    }
 
     </style>
 </head>
