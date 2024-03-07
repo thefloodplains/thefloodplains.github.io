@@ -70,6 +70,11 @@ ul.topnav li.center {
     display: inline-block;
 }
 
+@media only screen and (max-width: 750px)
+ul.topnav {
+    display: flex;
+}
+
 /* Body */
 
 body {
