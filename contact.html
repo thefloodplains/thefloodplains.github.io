@@ -278,21 +278,85 @@ ul.topnav li {
     }
 }
 
+@media only screen and (max-width: 750px) {
+      ul.topnav li {
+        float:left;
+      }
+    }
+
+    @media only screen and (max-width: 750px) {
+      ul.topnav li a {
+        padding: 9px 9px;
+        }
+    }
+
+    @media only screen and (max-width: 750px) {
+    body > ul.desktop.topnav {
+        display:none !important;
+        }
+    }
+
+    @media only screen and (max-width: 750px) {
+      ul.topnav {
+        padding-bottom: 0px;
+        margin-bottom: -10px;
+        display: flex;
+        justify-content: center; /* Horizontally center the items */
+        list-style-type: none;
+        /* display: flex; */
+      }
+    }
+
+    @media only screen and (max-width: 750px) {
+      img.center2 {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: 750px) {
+    .mobile1, .mobile2 {
+        display:none;
+        }
+    }
+
+    @media only screen and (max-width: 751px) {
+    .desktop {
+        display: none;
+        }
+    }
+
 </style>
 </head>
 <body>
 
-<ul class="topnav">
+<ul class="desktop topnav">
   <li><a href="contact">CONTACT</a></li>
   <li><a href="art">ART</a></li>
   <li><a href="epk">EPK</a></li>
   <li><a href="music">MUSIC</a></li>
-  <li class="yes"><div class="middle"><a class="nopad" href="https://thefloodshark.com/"><img class="twoo" src="logo.png" style="padding-top:7px"></div></li>
-  <li class="left"><a href="https://twitter.com/theFloodShark"><img class="social" src="twitter.svg"></a></li>
-  <li class="left"><a href="https://www.instagram.com/thefloodshark"><img class="social" src="ig_black.svg"></a></li>
-  <li class="left"><a href="https://www.facebook.com/thefloodshark"><img class="social" src="facebook_black.svg"></a></li>
-  <li class="left"><a href="https://www.youtube.com/channel/UCrcvj6Q-V4S-xad_Y_gPTFw"><img class="social" src="youtube.svg"></a></li>
-  <li class="left"><a href="https://open.spotify.com/artist/2zFwAdyVk6Qt1pfDGyEjOW"><img class="social" src="spotify.svg"></a></li>
+  <li class="yes"><div class="middle"><a class="nopad" href="https://thefloodshark.com"><img class="center2" src="logo.png" style="padding-top:7px"></a></div></li>
+  <li class="grayscale left"><a href="https://twitter.com/theFloodShark"><img class="grayscale social" src="twitter.svg"></a></li>
+  <li class="grayscale left"><a href="https://www.instagram.com/thefloodshark/"><img class="grayscale social" src="ig_black.svg"></a></li>
+  <li class="grayscale left"><a href="https://www.facebook.com/thefloodshark"><img class="grayscale social" src="facebook_black.svg"></a></li>
+  <li class="grayscale left"><a href="https://www.youtube.com/channel/UCrcvj6Q-V4S-xad_Y_gPTFw"><img class="grayscale social" src="youtube.svg"></a></li>
+  <li class="grayscale left"><a href="https://open.spotify.com/artist/2zFwAdyVk6Qt1pfDGyEjOW"><img class="grayscale social" src="spotify.svg"></a></li>
+</ul>
+
+<!-- mobile -->
+
+<ul class="mobile1 topnav">
+  <li><a href="contact">CONTACT</a></li>
+  <li><a href="art">ART</a></li>
+  <li><a href="epk">EPK</a></li>
+  <li><a href="music">MUSIC</a></li>
+</ul>
+<ul class="mobile2 topnav">
+  <li class="yes"><div class="middle"><a class="nopad" href="https://thefloodshark.com"><img class="center2" src="logo.png" style="padding-top:7px"></a></div></li>
+  <li class="grayscale left"><a href="https://twitter.com/theFloodShark"><img class="grayscale social" src="twitter.svg"></a></li>
+  <li class="grayscale left"><a href="https://www.instagram.com/thefloodshark/"><img class="grayscale social" src="ig_black.svg"></a></li>
+  <li class="grayscale left"><a href="https://www.facebook.com/thefloodshark"><img class="grayscale social" src="facebook_black.svg"></a></li>
+  <li class="grayscale left"><a href="https://www.youtube.com/channel/UCrcvj6Q-V4S-xad_Y_gPTFw"><img class="grayscale social" src="youtube.svg"></a></li>
+  <li class="grayscale left"><a href="https://open.spotify.com/artist/2zFwAdyVk6Qt1pfDGyEjOW"><img class="grayscale social" src="spotify.svg"></a></li>
 </ul>
     
     <hr>
