@@ -202,10 +202,8 @@ h {
 
 @media screen and (max-width: 600px) {
     img {
-    max-height: 92px;
-    max-width: 92px; 
-    height: 92px;
-    width: 92px; 
+    width:75px;
+    display:block !important;
     }
 }
  
@@ -338,6 +336,12 @@ ul.topnav li {
         box-shadow:none;
     }
 
+    @media only screen and (max-width: 750px) {
+        .yes {
+            display:none !important;
+        }
+    }
+
 </style>
 </head>
 <body>
@@ -409,7 +413,6 @@ ul.topnav li {
   </div>    
 </div> 
     
-
 <div style="display:flex;justify-content:center;align-items:center;width:960px;" class="row seem"> 
   <div class="column">
     <h1><center>YouTube</center></h>
