@@ -1,7 +1,7 @@
 <html>
 	<head>
-        <title>The FloodShark - Surfing the Sonic Waves</title>
-        <meta name="description" content="Bender Design Co. - Bend your mind with Bender Designs" />
+      <title>The FloodShark - Surfing the Sonic Waves</title>
+      <meta name="description" content="Bender Design Co. - Bend your mind with Bender Designs" />
 <!--        <meta name="google-site-verification" content="gHLsfkZIbzzGGmhBs3s0YiP-bZqFqCg-oYSTDSw2CA0" /> -->
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <!--        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166041917-2"></script>
@@ -28,7 +28,7 @@
 
   body {
     /* background: url(blue_water.jpg); */
-    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(blue_water.jpg);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(black-water.jpg);
     background-attachment: fixed;
   }
 
@@ -36,7 +36,7 @@
     font-size: 4em;
     text-align: center;
     font-family: 'averta_stdbold';
-    color: black;
+    color: white;
     padding-top: 32px;
   }
 
@@ -88,7 +88,7 @@
   h2 {
     font-size: 2.5em;
     text-align: center;
-    color: black;
+    color: magenta;
     font-family: 'averta_stdbold';
     line-height: 50px;
   }
@@ -101,7 +101,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     /* width: 50%; */
-    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0 8px 3px rgba(255, 255, 255, 0.6);
     }
 
   /* div.column > a > img {
@@ -110,13 +110,11 @@ img {
   } */
 
   .column img, .columntwo img {
-      height: 350px; /* Ensure consistent height */
+      height: 300px; /* Ensure consistent height */
       width: auto;   /* Maintain aspect ratio */
       display: block;
       margin-left: auto;
       margin-right: auto;
-      margin-left:12px;
-      margin-right:12px;
   }
 
   img.box {
@@ -240,6 +238,8 @@ img {
   flex-direction: column;  /* Stacks the content vertically */
   align-items: center;     /* Centers items horizontally */
   justify-content: center; /* Centers items vertically */
+  margin-left:12px;
+  margin-right:12px;
 }
 
 @media only screen and (max-width: 750px) {
@@ -256,7 +256,7 @@ img {
 /* } */
 
 .column img {
-    margin-top: 24px;
+    margin-top: 12px;
     margin-bottom: 40px;
     width: 100%;
 }
@@ -358,6 +358,24 @@ ul.topnav {
       margin-bottom: 10px; /* Adjusts space between text and image */
   }
 
+  .line-with-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    margin-bottom:12px;
+  }
+
+  .line-with-text::before,
+  .line-with-text::after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #ccc;
+    margin: 0 10px;
+    margin-top:12px;
+  }
+
   </style>
 	
 <body>
@@ -393,15 +411,13 @@ ul.topnav {
   </ul>
 
 <div>
-	<center><h1>Discography</h1></center>
-  <!-- <center><h2>Completely Free</h2></center> -->
+	<h1>floodshark discography (2016-2025)</h1>
+  <h2>singles|EPs & microalbums|albums|videos</h2>
 </div>
 
 <div class="fullwidth">
     
-    <hr>
-    
-    <center><h2 class="Mont"><b>Singles</b></h2></center>
+    <h2 id="singles" class="Mont line-with-text"><b>singles</b></h2>
 
 <div class="row seem"> 
   <div class="column">
@@ -409,7 +425,7 @@ ul.topnav {
       <a href="https://mega.nz/#!t641wCwZ!IeFXaoUy78LhclSZC6NXzlWB4vUqKzkak1EUPgzf-4g"><img src="HungrySharkSpotify.jpg" style="width:100%" class="block" title="HungryShark"></a>
   </div>
   <div class="column">
-    <h3><a href="https://youtu.be/ws29jG6nvHE" target="_blank">The Man on the Porch ~ with Nazeeh Tarsha</a></h3>
+    <h3><a href="https://youtu.be/ws29jG6nvHE" target="_blank">The Man on the Porch</a></h3>
       <a href="https://mega.nz/#!Qj5BzRoA!xaBAfy7z_Q2Oa2qdyviBe4ym_9RRuUuIbks-pxKvuQQ"><img src="TheManOnThePorch.jpg" style="width:100%" class="block" title="The Man on the Porch"></a>
   </div>
   <div class="column">
@@ -488,9 +504,7 @@ ul.topnav {
     
 <div class="fullwidth">    
     
-    <hr>
-    
-    <center><h2 class="Mont"><b>EPs</b></h2></center>
+    <center><h2 id="eps" class="Mont line-with-text"><b>EPs</b></h2></center>
         
 <div class="row seem"> 
   <div class="column">
@@ -509,9 +523,7 @@ ul.topnav {
 
     <br>
 
-      <hr>
-
-     <center><h2 class="Mont"><b>Albums</b></h2></center>
+     <h2 id="albums" class="Mont line-with-text"><b>albums</b></h2>
         
 <div class="row seem"> 
   <div class="column">
