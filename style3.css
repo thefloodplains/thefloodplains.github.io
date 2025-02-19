@@ -1,4 +1,4 @@
-@-ms-viewport{
+@-ms-viewport {
   width: device-width;
 }
 
@@ -45,7 +45,7 @@ h2 {
 }
 h3 {
 	font-size: 24px;
-    text-decoration: underline;
+  text-decoration: underline;
 }
 h4 {
   color: black;
