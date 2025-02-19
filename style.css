@@ -52,6 +52,9 @@ ul.topnav li a {
     text-decoration: none;
     font-size: 125%;
     font-weight: 700;
+    display: flex !important;
+    height: 88px !important;
+    align-items: center !important;
 }
 
 /* ul.topnav li a:hover:not(.active) {
