@@ -382,80 +382,34 @@ ul.topnav {
     margin-right:6px;
   }
 
-  .lightbox-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-}
-
-/* Lightbox Content */
-.lightbox-content {
-    background: white;
-    width: 50%;
-    height: 50%;
-    padding: 20px;
-    border-radius: 10px;
-    position: relative;
-    text-align: left;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    overflow-y: auto;
-}
-
-/* Info Styling */
-.lightbox-content h3 {
-    margin-top: 0;
-    font-size: 1.8em;
-    color: #333;
-}
-
-.lightbox-content p {
-    font-size: 1em;
-    line-height: 1.5;
-    color: #555;
-}
-
-.lightbox-content strong {
-    color: #222;
-}
-
-.lightbox-content .highlight {
-    background: #ffd700;
-    padding: 2px 5px;
-    border-radius: 3px;
-}
-
-.lightbox-content .italic {
-    font-style: italic;
-}
-
-.lightbox-content .bold {
-    font-weight: bold;
-}
-
-.lightbox-content a {
-    color: #0077cc;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.lightbox-content a:hover {
-    text-decoration: underline;
-}
+   #lightbox-overlay {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    #lightbox-img {
+        max-width: 90%;
+        max-height: 90%;
+    }
+    #lightbox-close {
+        position: absolute;
+        top: 10px; right: 20px;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
 
   </style>
 	
 <body>
 
   <ul class="desktop topnav">
-    <li><a href="links">LINKS</a></li>
+    <li><a href="contact">CONTACT</a></li>
     <li><a href="art">ART</a></li>
     <li><a href="epk">EPK</a></li>
     <li><a href="music">MUSIC</a></li>
@@ -470,7 +424,7 @@ ul.topnav {
   <!-- mobile -->
 
   <ul class="mobile1 topnav">
-    <li><a href="links">LINKS</a></li>
+    <li><a href="contact">CONTACT</a></li>
     <li><a href="art">ART</a></li>
     <li><a href="epk">EPK</a></li>
     <li><a href="music">MUSIC</a></li>
@@ -512,15 +466,15 @@ ul.topnav {
 <div class="row seem"> 
   <div class="column">
       <h3><a href="https://www.youtube.com/watch?v=VU9W0CQKWjw" target="_blank">Kai</a></h3>
-      <a href="https://mega.nz/#F!47oACB6I!-AghZgWz3kDWRZTVvY8_Jw" target="_blank"><img src="Kai.jpg" style="width:100%" class="block" title="Kai"></a>
+      <a href="https://mega.nz/#F!47oACB6I!-AghZgWz3kDWRZTVvY8_Jw"><img src="Kai.jpg" style="width:100%" class="block" title="Kai"></a>
   </div>
   <div class="column">
       <h3><a href="https://www.youtube.com/watch?v=xHbxLmZAydc" target="_blank">On Some Nearby Beach</a></h3>
-      <a href="https://mega.nz/#F!h7xHhRJb!tIUhKFJQ5iNbMOTrodDZ6Q" target="_blank"><img src="gator.jpg" style="width:100%" class="block" title="On Some Nearby Beach"></a>
+      <a href="https://mega.nz/#F!h7xHhRJb!tIUhKFJQ5iNbMOTrodDZ6Q"><img src="gator.jpg" style="width:100%" class="block" title="On Some Nearby Beach"></a>
   </div>
   <div class="column">
       <h3><a href="https://www.youtube.com/watch?v=XoppBB9ZTkg" target="_blank">Come Waves</a></h3>
-      <a href="https://mega.nz/#F!h7wS3IJB!cLwU4zPIacBy1clavdqpBw" target="_blank"><img src="ComeWaves.jpg" style="width:100%" class="block" title="Come Waves"></a>
+      <a href="https://mega.nz/#F!h7wS3IJB!cLwU4zPIacBy1clavdqpBw"><img src="ComeWaves.jpg" style="width:100%" class="block" title="Come Waves"></a>
   </div>    
 </div> 
     
@@ -528,11 +482,11 @@ ul.topnav {
 <div class="row seem"> 
   <div class="column">
       <h3><a href="https://www.youtube.com/watch?v=Vduf2cVHtxA" target="_blank">Las Luces</a></h3>
-      <a href="https://mega.nz/#F!RzwFzKAb!cNdVqv4SMvBEc_YtLExvZg" target="_blank"><img src="LasLuces.jpg" style="width:100%" class="block"></a>
+      <a href="https://mega.nz/#F!RzwFzKAb!cNdVqv4SMvBEc_YtLExvZg"><img src="LasLuces.jpg" style="width:100%" class="block"></a>
   </div>
   <div class="column">
       <h3><a href="https://soundcloud.com/thefloodshark/para-ti-mi-luz" target="_blank">Para Ti, Mi Luz</a></h3>
-      <a href="https://drive.google.com/drive/u/1/folders/1A1C_oQLmmRSLxf-M_B3nQDEJOdgVywpL" target="_blank"><img src="Parati.jpg" style="width:100%" class="block" title="/u/theFloodShark"></a>
+      <a href="https://drive.google.com/drive/u/1/folders/1A1C_oQLmmRSLxf-M_B3nQDEJOdgVywpL"><img src="Parati.jpg" style="width:100%" class="block" title="/u/theFloodShark"></a>
   </div>
   <div class="column">
       <h3><a href="https://www.youtube.com/watch?v=ZLsqxrUAHgE&list=PLhvUUc4b3HWi6NJCxBkzt_TpCfAIIH70c" target="_blank">Aquabots + Stardrops</a></h3>
@@ -543,30 +497,30 @@ ul.topnav {
 <div class="row seem"> 
   <div class="column">
       <h3><center><a href="https://www.youtube.com/watch?v=fkCWVUGNAsg" target="_blank">Colombia Contigo</a></center></h3>
-      <a href="https://thefloodshark.bandcamp.com/track/colombia-contigo" target="_blank"><img src="colombia_contigo.jpg" style="width:100%" class="block"></a>
+      <a href="https://thefloodshark.bandcamp.com/track/colombia-contigo"><img src="colombia_contigo.jpg" style="width:100%" class="block"></a>
   </div>
     <div class="column">
       <h3><center><a href="https://www.youtube.com/watch?v=O0qP7qBsGiQ" target="_blank">I Don't Know, Ya Know?</a></center></h3>
-      <a href="https://thefloodshark.bandcamp.com/track/i-dont-know-ya-know" target="_blank"><img src="FS_Idk-Ya-Know_art_A.png" style="width:100%" class="block"></a>
+      <a href="https://thefloodshark.bandcamp.com/track/i-dont-know-ya-know"><img src="FS_Idk-Ya-Know_art_A.png" style="width:100%" class="block"></a>
   </div>
   <div class="column">
       <h3><center><a href="https://www.youtube.com/watch?v=KCyEA0E7ywo" target="_blank">No Me Importa</a></center></h3>
-      <a href="https://thefloodshark.bandcamp.com/track/no-me-importa" target="_blank"><img src="FS_No_Me_Importa_art_C.png" style="width:100%" class="block"></a>
+      <a href="https://thefloodshark.bandcamp.com/track/no-me-importa"><img src="FS_No_Me_Importa_art_C.png" style="width:100%" class="block"></a>
   </div>
 </div>
 
 <div class="row seem">
     <div class="column">
       <h3><center><a href="https://www.youtube.com/watch?v=xsQdvbhsXSk" target="_blank">Todavía Mi Luz</a></center></h3>
-      <a href="https://soundcloud.com/thefloodshark/todavia-mi-luz" target="_blank"><img src="todavia.png" style="width:100%" class="block"></a>
+      <a href="https://soundcloud.com/thefloodshark/todavia-mi-luz"><img src="todavia.png" style="width:100%" class="block"></a>
     </div>
     <div class="column">
       <h3><center><a href="https://www.youtube.com/watch?v=FMM1KC77kMo" target="_blank">Marmaid</a></center></h3>
-      <a href="https://thefloodshark.bandcamp.com/track/marmaid" target="_blank"><img src="marmaid.png" style="width:100%" class="block"></a>
+      <a href="https://thefloodshark.bandcamp.com/track/marmaid"><img src="marmaid.png" style="width:100%" class="block"></a>
     </div>
     <div class="column">
       <h3><center><a href="https://youtu.be/AIo3Uo2u0pw?si=ssxgkAjeceEROvrn" target="_blank">Savannah Sunshine</a></center></h3>
-      <a href="https://thefloodshark.bandcamp.com/track/savannah-sunshine" target="_blank"><img src="sunshine.png" style="width:100%" class="block"></a>
+      <a href="https://thefloodshark.bandcamp.com/track/savannah-sunshine"><img src="sunshine.png" style="width:100%" class="block"></a>
     </div>
   <!--  <div class="column">
       <h3><center><a href="https://www.youtube.com/watch?v=FMM1KC77kMo" target="_blank">Savannah Sunshine</a></center></h3>
@@ -628,3 +582,42 @@ ul.topnav {
     <br>
     
 </div>
+
+<!-- Lightbox Container -->
+<div id="lightbox-overlay">
+    <span id="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="">
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const lightboxLinks = document.querySelectorAll(".lightbox");
+        const lightboxOverlay = document.getElementById("lightbox-overlay");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const closeBtn = document.getElementById("lightbox-close");
+        
+        lightboxLinks.forEach(link => {
+            link.addEventListener("click", function(event) {
+                event.preventDefault();
+                lightboxImg.src = this.href;
+                lightboxOverlay.style.display = "flex";
+            });
+        });
+        
+        closeBtn.addEventListener("click", function() {
+            lightboxOverlay.style.display = "none";
+        });
+        
+        lightboxOverlay.addEventListener("click", function(event) {
+            if (event.target === lightboxOverlay) {
+                lightboxOverlay.style.display = "none";
+            }
+        });
+        
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "Escape") {
+                lightboxOverlay.style.display = "none";
+            }
+        });
+    });
+</script>
