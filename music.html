@@ -123,6 +123,26 @@ img {
     margin-left:-40px;
   }
 
+  @media only screen and (max-width: 750px) {
+    img.box {
+      margin-left:0px;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .row {
+  box-sizing: border-box;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .row {
+  padding-left: 0px;
+  padding-right: 0px;
+    }
+  }
+
+
   /* div {
       position: absolute;
       top:0;
@@ -322,7 +342,6 @@ ul.topnav {
 
   @media only screen and (max-width: 750px) {
     .seem {
-      display:inherit;
       justify-content:center;
       align-items:center;
       width:inherit;
@@ -454,6 +473,39 @@ a:hover {
   color:#00FFEF;
 }
 
+
+@media only screen and (max-width: 750px) {
+h2.purple1 {
+  display:grid;
+  max-width:fit-content;
+  font-size:21px;
+  margin:0 auto;
+  line-height:27px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  }
+}
+
+  @media only screen and (max-width: 750px) {
+  .column img, .columntwo img {
+      width: 100% !important;   /* scale to fit column */
+      height: auto !important;  /* keep aspect ratio */
+      max-height: none !important; /* allow taller images */
+      object-fit: contain !important; /* prevent cropping */
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .row {
+  gap: 10px !important;
+  }
+}
+
   </style>
 	
 <body>
@@ -489,8 +541,8 @@ a:hover {
   </ul>
 
 <div>
-	<h1>floodshark discography (2016-2025)</h1>
-  <h2><a class="purple" href="#singles">singles</a>|<a class="purple" href="#eps">EPs & microalbums</a>|<a class="purple" href="#albums">albums</a>|<a class="purple" href="https://www.youtube.com/@thefloodshark/videos">videos</a></h2>
+	<h1>floodshark discography</h1>
+  <h2 class="purple1"><a class="purple" href="#singles">singles</a>|<a class="purple" href="#eps">EPs & microalbums</a>|<a class="purple" href="#albums">albums</a>|<a class="purple" href="https://www.youtube.com/@thefloodshark/videos">videos</a></h2>
 </div>
 
 <div class="fullwidth">
